@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>蒋昊延 Jiang Haoyan · 个人主页</title>
+  <meta name="description" content="蒋昊延，上海交通大学计算机系软件工程专业本科生。研究兴趣：端侧智能（Edge AI）与软硬件协同设计。" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <span class="nav-name">蒋昊延</span>
+      <span class="nav-links">
+        <a href="#interests">研究兴趣</a>
+        <a href="#education">教育</a>
+        <a href="#projects">项目</a>
+        <a href="#skills">技能</a>
+      </span>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <!-- ══ 头部 ══ -->
+    <header class="site-header">
+      <h1>蒋昊延 <span class="en-name">Jiang Haoyan</span></h1>
+      <p class="identity">上海交通大学 · 计算机系 · 软件工程专业 · 2024 级本科（大三）</p>
+      <p class="contact">
+        <a href="mailto:jianghaoyan@sjtu.edu.cn">jianghaoyan@sjtu.edu.cn</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/HAOYANERIC" target="_blank" rel="noopener">GitHub</a>
+        <span class="sep">·</span>137-5432-8522
+      </p>
+    </header>
+
+    <!-- ══ 研究兴趣 ══ -->
+    <section id="interests">
+      <h2>研究兴趣</h2>
+      <p>端侧智能（Edge AI）· 软硬件协同设计</p>
+    </section>
+
+    <!-- ══ 教育背景 ══ -->
+    <section id="education">
+      <h2>教育背景</h2>
+      <article class="entry">
+        <h3>上海交通大学 —— 软件工程 本科在读 <span class="date">2024.09 – 至今</span></h3>
+        <ul>
+          <li>核心学积分 <strong>90.03</strong>/100，专业排名 <strong>23</strong>/91</li>
+          <li>核心课程：计算机系统基础 95 ｜ 互联网应用开发技术 94 ｜ 数据结构 93 ｜ 高级数据结构 92</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ══ 项目经历 ══ -->
+    <section id="projects">
+      <h2>项目经历</h2>
+
+      <article class="entry">
+        <h3>SJTU Knowledge —— 面向 Canvas 的智能课程资料助手 <span class="date">2026.03 – 至今</span></h3>
+        <p class="meta">校级长期项目 · 5 人团队 · 持续迭代走向实际部署 ｜ 角色：MinerU 解析网关负责人（后端为主），兼集成测试与前端 UI</p>
+        <ul>
+          <li>面向校内 Canvas 平台的 RAG 智能问答系统：课程资料自动同步、文档解析、范围检索问答与句子级引用溯源；获校信息化推进办公室认可，作为 Canvas 智能助教迁移目标</li>
+          <li>为文档解析引擎 MinerU 开发生产级网关服务（Python 后端 + 管理前端）：API Key 签发/吊销与用量统计，邮箱注册、密码登录与 OIDC 单点登录的多用户体系</li>
+          <li>设计任务全生命周期管理：任务持久化、按状态/时间/文件筛选与分页、任务取消、幂等提交；实现容灾恢复机制（文件暂存磁盘、上游故障自动重提），保障任务不丢失</li>
+          <li>后端单元测试覆盖率 <strong>95%</strong>；编写覆盖任务全周期、并发上限、速率限制等场景的集成测试，参与前端 UI 设计优化与端到端测试</li>
+        </ul>
+        <p class="meta">注：校内私有项目，代码暂不公开</p>
+      </article>
+
+      <article class="entry">
+        <h3>LLM Agent 实验框架 —— 计算机系统基础课程实验 <span class="date">2026.06</span></h3>
+        <p class="meta">在禁用 SDK function calling 的约束下，从零实现 LLM Agent 的完整运行机制（三个场景评测全部满分）</p>
+        <ul>
+          <li>实现 Agent 主循环与手写 JSON 工具调用协议：格式容错解析、失败修复重试与工具调度</li>
+          <li>实现通用工具集：文件读写/编辑、shell 执行、skill 按需加载、子 Agent 任务委派，并记录全流程 trace</li>
+          <li>实现上下文工程：token 估算、增量式历史压缩（LLM 摘要）、长期记忆写入与按需检索</li>
+          <li>数据脱敏 / 临时任务分发 / 补丁审查三个业务场景评测全部满分通过</li>
+        </ul>
+        <p class="meta"><a href="https://github.com/HAOYANERIC/ics-agent-lab" target="_blank" rel="noopener">github.com/HAOYANERIC/ics-agent-lab</a></p>
+      </article>
+
+      <article class="entry minor">
+        <h3>其他项目</h3>
+        <ul>
+          <li>试卷解析 Agent（协作项目）：<a href="https://github.com/jingmikun/openmaic-tixi" target="_blank" rel="noopener">openmaic-tixi</a></li>
+          <li>荣昶公益基金会「一触即发」小程序：生产环境运维（持续维护）</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ══ 技能 ══ -->
+    <section id="skills">
+      <h2>技能</h2>
+      <ul>
+        <li><strong>编程语言：</strong>Python（熟练）、C++、JavaScript</li>
+        <li><strong>工程实践：</strong>前后端开发经历、单元 / 集成 / 端到端测试、生产环境运维经验</li>
+        <li><strong>工具与环境：</strong>Linux、Git、Docker</li>
+      </ul>
+    </section>
+
+    <!-- ══ 荣誉 ══ -->
+    <section id="honors">
+      <h2>荣誉</h2>
+      <ul>
+        <li>2025 年上海交通大学 B 等优秀奖学金</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 蒋昊延 · 由 <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> 托管</p>
+    </div>
+  </footer>
+
+</body>
+</html>
